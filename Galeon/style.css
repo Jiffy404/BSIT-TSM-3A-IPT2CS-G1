@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), #5e4a30), url(images/genshin.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+.Dont{
+    width: 140px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding: 140px;
+}
+.banner-text h1{
+    font-size: 90px;
+}
+.banner-text p{
+    font-size: 30px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: .5px solid #fff;
+}
