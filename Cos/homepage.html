@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+    text-align: center;
+    margin: auto;
+    width: 800px; 
+    padding: 70px;
+    background-image: url(wow.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+   
+}
+img{
+    display: block;
+    margin: auto;
+    float: inline-start;
+    padding: 2px;
+    width: 195px;
+    height: 200px;
+    border-radius: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+h2{
+    color: transparent;
+    font-size: 1200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    background-image: url(image3.png);
+    display: inline-block;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: text ;
+    -webkit-background-clip: text;
+    opacity: 0.9;
+    
+
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 85%;
+  left: 20.9%;
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>GROUP 1</h2>
+<div class="container">
+<a href="site1.html"><img src="tine.png" alt="HTML tutorial" class="avatar" ></a>
+    <div class="middle">
+        <div class="text">TINE</div>
+    </div>
+</div>
+<a href="site1.html"><img src="Juliana.jpg" alt="HTML tutorial" class="avatar"></a>
+<a href="site1.html"><img src="Ina.jpg" alt="HTML tutorial" class="avatar"></a>
+<a href="site1.html"><img src="Jeffrey.jpg" alt="HTML tutorial" class="avatar"></a>
+
+</body>
+</html>
