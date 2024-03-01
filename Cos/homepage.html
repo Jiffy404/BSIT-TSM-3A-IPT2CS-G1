@@ -9,7 +9,7 @@ body{
     margin: auto;
     width: 800px; 
     padding: 70px;
-    background-image: url(wow.gif);
+    background-image: url(75733a83-fa61-4e05-b571-ce0a639bf232.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,8 +19,7 @@ body{
 img{
     display: block;
     margin: auto;
-    float: inline-start;
-    padding: 2px;
+    padding: 5px;
     width: 195px;
     height: 200px;
     border-radius: 100%;
@@ -29,11 +28,11 @@ img{
     backface-visibility: hidden;
 }
 h2{
-    color: transparent;
-    font-size: 1200%;
+   
+    font-size: 1400%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: bold;
-    background-image: url(image3.png);
+    background-image: url(75733a83-fa61-4e05-b571-ce0a639bf232.gif);
     display: inline-block;
     margin: 0;
     background-repeat: no-repeat;
@@ -41,7 +40,10 @@ h2{
     background-position: center;
     background-clip: text ;
     -webkit-background-clip: text;
-    opacity: 0.9;
+    opacity: 5;
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: rgb(231, 214, 214);
     
 
 }
@@ -49,11 +51,18 @@ h2{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 85%;
-  left: 20.9%;
-  
+  top: 90%;
+  left: 50%;
+  text-align: left;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
+}
+
+.container {
+  position: relative;
+  width: 25%;
+  float: left;
+  margin: auto;
 }
 
 .container:hover .image {
@@ -65,7 +74,7 @@ h2{
 }
 
 .text {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -76,14 +85,28 @@ h2{
 
 <h2>GROUP 1</h2>
 <div class="container">
-<a href="site1.html"><img src="tine.png" alt="HTML tutorial" class="avatar" ></a>
+<a href="site1.html"><img src="tine.png" alt="HTML tutorial"></a>
     <div class="middle">
         <div class="text">TINE</div>
     </div>
 </div>
-<a href="site1.html"><img src="Juliana.jpg" alt="HTML tutorial" class="avatar"></a>
-<a href="site1.html"><img src="Ina.jpg" alt="HTML tutorial" class="avatar"></a>
-<a href="site1.html"><img src="Jeffrey.jpg" alt="HTML tutorial" class="avatar"></a>
-
+<div class="container">
+<a href="site1.html"><img src="Juliana.jpg" alt="HTML tutorial"></a>
+    <div class="middle">
+      <div class="text">JULS</div>
+    </div>
+</div>
+<div class="container">
+<a href="site1.html"><img src="Ina.jpg" alt="HTML tutorial"></a>
+    <div class="middle">
+      <div class="text">INA</div>
+    </div>
+</div>
+<div class="container">
+<a href="site1.html"><img src="Jeffrey.png" alt="HTML tutorial"></a>
+    <div class="middle">
+      <div class="text">JEPAY</div>
+    </div>
+</div>
 </body>
 </html>
