@@ -1,0 +1,92 @@
+  .navi {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: grey;
+    width: auto;
+    height: 60px;
+  }
+  
+  .navi a {
+    margin: 0 1rem;
+    font-size: 0.7cm;
+    position: sticky;
+    justify-content: center;
+  }
+  
+  section {
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-align: center;
+    top: 1cm;
+  }
+  h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color:white;
+  }
+  h2{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color:black;
+  }
+  section p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  html {
+    scroll-behavior: inherit;
+  }
+  #Home{
+    background: url(front.jpeg) no-repeat center;
+    background-size: cover;
+
+
+  }
+  #about-me{
+    background: url(bgaboutme.jpeg) no-repeat center;
+    background-size: cover;
+    align-items: left;
+    font-size: x-large;
+    font-weight: bolder;
+  } 
+  #contact-me{
+    background: url(abtme.jpeg) no-repeat center;
+    background-size: cover;
+  } 
+  ul{
+    text-align: left;
+    align-items: normal;
+  }
+  .contact{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: auto;
+    padding: 1rem 2rem;
+  }
+  .facebook{
+    position: absolute;
+    top: 1800px;
+    left: 550px;
+  }
+  .instagram{
+    position: absolute;
+    top: 1800px;
+    left: 700px;
+  }
+  .tiktok{
+    position: absolute;
+    top: 1800px;
+    left: 850px;
+  }
+
+ 
