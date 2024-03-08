@@ -103,9 +103,9 @@ img{
     display: flex;
 }
 #pic img{
-    width: 200px;
-    height: 400px;
-    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    border-radius: 150px;
 }
 #intro{
     display: flex;
@@ -206,8 +206,21 @@ img{
     cursor: pointer;
     box-shadow: 0 0 10px black;
 }
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: #070606; 
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-
+.back-button:hover {
+    background-color: #000000; 
+}
 
 
 
