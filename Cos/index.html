@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/ccs? family=Kaushan+Script|Poppins%display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="banner">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_black">
+    <img src="images/Dont.png" class="Dont">
+</a>
+    <div class="banner-text">
+        <h1>Ad Astra Abyssosque!</h1>
+        <p>Welcome To My Website</p>
+
+<div class="banner-btn">
+    <button onclick="location.href='https://www.facebook.com/jeffrey.galeon.3'"><span></span>Profile</button>
+    
+    
+</div>
+    </div>
+</section>
+<div id="sideNav">
+<nav>
+<ul>
+    <li><a href="#About Me">About Me</a></li>
+    <li><a href="#Game History">Game History</a></li>
+</ul>
+</nav>
+</div>
+
+<div id="menuBtn" id="menu">
+    <img src="images/menubtn.png">
+</div>
+ 
+<!--About Me-->
+<section id="About Me"> 
+
+    <div class="title-text">
+        <h1>About Me</h1>
+
+    </div>
+
+
+    <div class="AboutMe-box">
+<div class="Aboutme">
+    <h2>Allow me to introduce myself i'm Jeffrey V. Galeon Jr, lives in Poblacion Norte Paniqui Tarlac, a student currently enrolled in the Technical Service Management 3A program within the College of Computer Studies at Tarlac State University. With a keen interest in Information Technology. I'm  20 years old, my birthday falls on April 17, 2003, marking me a determined Aries to pass the subject IPT2.</h2>
+
+        
+</div>
+
+<div class="Aboutme-img">
+    <img src="images/spongebob.gif">
+    
+</div>
+
+    </div>
+</section>
+
+<!--Game History-->
+
+<section id="Game History"> 
+
+    <div class="History-text">
+        <h1>Game History</h1>
+
+    </div>
+
+
+    <div class="History-box">
+<div class="GameHistory">
+    <h2>Since I don't know how to gamble money in real life I put my money into games such as gacha games(GI,Star rail,Aether gazer, Dragon ball Legends)
+         moba games (League, Arena of valor, Pokemon Unite, etc) FPS (Valorant, Csgo, Crossfire,Farlight 84) .</h2>
+
+        
+</div>
+
+<div class="GameHistory-img">
+    <img src="images/Gamehistory.gif">
+    
+</div>
+
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right =="-250px"){
+            sideNav.style.right = "0";
+            menuBtn.src ="images/close.png";
+
+
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menuBtn.src ="images/menubtn.png";
+        }
+    }
+    
+  
+</script>
+
+</body>
+</html>
