@@ -1,165 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-       * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
 
-.section {
-    width: 100vw;
-    height: 100vh;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    margin: 10px 5px;
-    transition: background-color 0.3s;
-}
+        .section {
+            width: 100vw;
+            height: 100vh;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+        }
 
-.section.one {
-    background-image: url(Magic_Hearts_Gif_Animation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 5;
-}
+        .section.one {
+            background-image: url(Magic_Hearts_Gif_Animation.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 5;
+        }
 
-.section.one img {
-    width: 0.5zvw;
-    opacity: 0.1;
-    height: 100vh;
-    transition: opacity 0.3s;
-}
+        .section.one img {
+            width: 0.5zvw;
+            opacity: 0.1;
+            height: 100vh;
+            transition: opacity 0.3s;
+        }
 
-.section.one:hover img {
-    opacity: 1;
-}
+        .section.one:hover img {
+            opacity: 1;
+        }
 
-marquee {
-    font-size: 240%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: bold;
-    opacity: 1;
-    color: cornsilk;
-    -webkit-text-stroke: 5px black;
-    -webkit-text-fill-color:cornsilk;
-    text-align: center;
-    pointer-events: none; 
-}
+        marquee {
+            font-size: 240%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: bold;
+            opacity: 1;
+            color: cornsilk;
+            -webkit-text-stroke: 5px black;
+            -webkit-text-fill-color: cornsilk;
+            text-align: center;
+            pointer-events: none;
+        }
 
-marquee:hover {
-    color: white;
-}
+        marquee:hover {
+            color: white;
+        }
 
-#mySidenav {
-    position: fixed;
-    height: 100%;
-}
+        #mySidenav {
+            position: fixed;
+            height: 100%;
+        }
 
-#mySidenav a {
-    position: relative;
-    left: -60px;
-    padding: 15px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 14px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
+        #mySidenav a {
+            position: relative;
+            left: -60px;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 14px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
 
-#mySidenav a:hover {
-    left: 0px;
-}
+        #mySidenav a:hover {
+            left: 0px;
+        }
 
-section {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        section {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-#home1 {
-    top: 170px;
-    background-color: red;
-}
+        #home1 {
+            top: 170px;
+            background-color: red;
+        }
 
-#aboutme2 {
-    top: 170px;
-    background-color: black;
-}
+        #aboutme2 {
+            top: 170px;
+            background-color: black;
+        }
 
-#hobby3 {
-    top: 170px;
-    background-color: red;
-}
+        #pets3 {
+            top: 170px;
+            background-color: red;
+        }
 
-#pets4 {
-    top: 170px;
-    background-color: black;
-}
+        #collection4 {
+            top: 170px;
+            background-color: black;
+        }
 
-#favorites5 {
-    top: 170px;
-    background-color: red;
-}
+        .section.two {
+            background-color: black;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px;
+        }
 
-.section.two{
-    background-color: aqua;
-}
+        .slideshow-container {
+            max-width: 330px;
+            position: absolute;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 10px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        .section.two .slideshow-container,
+        .section.two .box-cell {
+            flex: 1;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 330px) {
+            .prev,
+            .next {
+                font-size: 10px
+            }
+        }
+
+        .typed-out {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            font-size: 25px;
+            text-align: left;
+            display: inline-block;
+            padding-left: 35%;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 400px;
+            cursor: pointer;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            left: 70%;
+            transform: translateX(-50%);
+        }
+
+        .box-cell h1 {
+            font-size: 60px;
+            color: white;
+            padding-left: 45%;
+            text-align: justify;
+
+        }
+
+        .section.three {
+            color: white;
+            background-image: url(Hearts\ Love\ GIF\ -\ Hearts\ Love\ Raining\ Hearts\ -\ Discover\ &\ Share\ GIFs.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .zoom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .zoom {
+            overflow: hidden;
+            width: 300px;
+            height: 250px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .zoom img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            transition: transform .2s;
+        }
+
+        .zoom:hover img {
+            transform: scale(1.5);
+        }
+
+        .name {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .section.four {
+            background-color: black;
+        }
+
+        .section.four h2 {
+            color: white;
+            padding-top: 20px;
+        }
+
+        div.scroll-container {
+            background-color: black;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        div.scroll-container img {
+            padding: 10px;
+        }
+        #scrollButton {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 450px;
+            cursor: pointer;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            left: 60%;
+            transform: translateX(-50%);
+            -webkit-text-fill-color: white;
+        }
+       
+        .hidden {
+            display: none;
+        }
+        .section.four  button {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 450px;
+            cursor: pointer;
+            background-color: RED;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            left: 40%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
+
 <body>
 
-<div id="mySidenav" class="sidenav">
-    <a href="#home" id="home1" class="link">HOME</a>
-    <a href="#aboutme" id="aboutme2" class="link">ABOUT ME</a>
-    <a href="#hobby" id="hobby3" class="link">HOBBY</a>
-    <a href="#pets" id="pets4" class="link">PETS</a>
-    <a href="#favorites" id="favorites5" class="link">FAVORITES</a>
-</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#home" id="home1" class="link">HOME</a>
+        <a href="#aboutme" id="aboutme2" class="link">ABOUT ME</a>
+        <a href="#pets" id="pets3" class="link">PETS</a>
+        <a href="#collection" id="collection4" class="link">FAVORITES</a>
+    </div>
 
-<div class="section one" id="home">
-    <marquee behavior="slide" direction="LEFT" scrollamount="3">
-        WELCOME <br>~TO MY~ <br>PORTFOLIO
-      </marquee>
-    <img src="14.jpg" alt="Your Image" class="image" style="width:70%">
-</div>
+    <div class="section one" id="home">
+        <marquee behavior="slide" direction="LEFT" scrollamount="10">
+            WELCOME <br>~TO MY~ <br>PORTFOLIO
+        </marquee>
+        <img src="14.jpg" alt="Your Image" class="image" style="width:70%">
+    </div>
 
-<div class="section two" id="aboutme">
-    <h3>HI Everyone!! </h3>
-    <h1>I'm CHRISTINE ANN A. COS</h1>
-    <h4>
-        I am 22 years old and I'm the second daughter among the 4 Maria's. 
-        I am a pet lover I have a lot of dogs already but some of them died and only 2 dogs I have here at home. 
-        I am a February Baby, and my star sign is Aquarius. 
-        I love traveling, watching Kdramas, playing badminton, and most of all I love to sleep. 
-        I am a 3rd-year college student at Tarlac State University taking Computer Studies Major in Technical Service Management. 
-    </h4>
-</div>
-<div class="section three" id="hobby">
-    section 3
-</div>
-<div class="section four" id="pets">
-    section 4
-</div>
-<div class="section five" id="favorites">
-    section 4
-</div>
+    <div class="section two" id="aboutme">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="ako.jpeg" alt="Slide 1">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="fam.jpg" alt="Slide 2">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="baby.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="baby1.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="bday.jpg" alt="Slide 5">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="aqua.png" alt="Slide 6">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="IMG_168318710886F.jpg" alt="Slide 7">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        <div class="box-cell">
+            <h1 style="text-align: center;"> ABOUT ME</h1>
+            <div id="typedText" class="typed-out"></div>
+        </div>
+
+        <button onclick="startTyping()">Start Typing</button>
+
+        <script>
+            var text = `I am 22 years old.
+                I'm the second daughter among the 4 Maria's.
+                I am a pet lover. 
+                I have 2 dogs but in the past I have 5 dogs.
+                I am a February Baby, and my star sign is Aquarius.
+                I love traveling, watching Kdramas, playing badminton.
+                And most of all I love to sleep.
+                I am a 3rd-year college student at Tarlac State University.
+                Taking Computer Studies Major in Technical Service Management.`;
+
+            var speed = 50;
+            var i = 0;
+
+            function startTyping() {
+                var element = document.getElementById("typedText");
+                element.innerHTML = '';
+                typeWriter();
+            }
+
+            function typeWriter() {
+                var element = document.getElementById("typedText");
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    if (text.charAt(i) === '.') {
+                        element.innerHTML += '<br>';
+                    }
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        </script>
+    </div>
+
+    <div class="section three" id="pets">
+        <h3>MY BABIES</h3>
+        <div class="zoom-container">
+            <div class="row">
+                <div class="zoom">
+                    <img src="machu.jpg" alt="Image 1">
+                    <div class="name">MACHU</div>
+                </div>
+                <div class="zoom">
+                    <img src="rain.jpg" alt="Image 2">
+                    <div class="name">RAIN</div>
+                </div>
+                <div class="zoom">
+                    <img src="milo.jpg" alt="Image 3">
+                    <div class="name">MILO</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="zoom">
+                    <img src="sophie.jpg" alt="Image 4">
+                    <div class="name">SOPHIE</div>
+                </div>
+                <div class="zoom">
+                    <img src="martine.png" alt="Image 5">
+                    <div class="name">MARTINE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section four" id="collection">
+        <h2>MY COLLECTION</h2>
+        <a href="homepage.html">
+            <button id="scrollButton">BACK HOMEPAGE</button>
+        </a>
+        <button id="toggleButton" onclick="HIDE()">HIDE & SHOW</button>
+        <div class="scroll-container" id="scrollContainer">
+            <img src="1.jpg" alt="Cinque Terre" width="600" height="400">
+            <img src="2.jpg" alt="Forest" width="600" height="400">
+            <img src="3.jpg" alt="Northern Lights" width="600" height="400">
+            <img src="4.jpg" alt="Mountains" width="600" height="400">
+            <img src="5.jpg" alt="Northern Lights" width="600" height="400">
+            <img src="6.jpg" alt="Mountains" width="600" height="400">
+        </div>
+    </div>
+
+    <script>
+        function HIDE() {
+            var scrollContainer = document.getElementById("scrollContainer");
+            scrollContainer.classList.toggle("hidden");
+        }
+    </script>
 </body>
+
 </html>
